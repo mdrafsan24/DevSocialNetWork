@@ -14,6 +14,8 @@
 		881877981E29BBD500B58A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881877971E29BBD500B58A67 /* Assets.xcassets */; };
 		8818779B1E29BBD500B58A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881877991E29BBD500B58A67 /* LaunchScreen.storyboard */; };
 		881877A31E29BC9400B58A67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 881877A21E29BC9400B58A67 /* GoogleService-Info.plist */; };
+		88E9E2161E2A92E0004D08AC /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9E2151E2A92E0004D08AC /* FancyView.swift */; };
+		88E9E2191E2A94E5004D08AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9E2181E2A94E5004D08AC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		8818779A1E29BBD500B58A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8818779C1E29BBD500B58A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881877A21E29BC9400B58A67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88B4A9C51E2C9D0E000DA26F /* DevSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DevSocial.entitlements; sourceTree = "<group>"; };
+		88E9E2151E2A92E0004D08AC /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		88E9E2181E2A94E5004D08AC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D044EBBE3C2DD53798C61D4F /* Pods-DevSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevSocial/Pods-DevSocial.release.xcconfig"; sourceTree = "<group>"; };
 		E2D1DB5D29867F85423158C7 /* Pods_DevSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,15 +77,17 @@
 		8818778F1E29BBD500B58A67 /* DevSocial */ = {
 			isa = PBXGroup;
 			children = (
+				88B4A9C51E2C9D0E000DA26F /* DevSocial.entitlements */,
+				88E9E2171E2A94CE004D08AC /* Util */,
 				88E9E2121E29BE2A004D08AC /* Model */,
 				88E9E2131E29BE2F004D08AC /* View */,
 				88E9E2141E29BE33004D08AC /* Controller */,
-				881877A21E29BC9400B58A67 /* GoogleService-Info.plist */,
 				881877901E29BBD500B58A67 /* AppDelegate.swift */,
 				881877941E29BBD500B58A67 /* Main.storyboard */,
 				881877971E29BBD500B58A67 /* Assets.xcassets */,
 				881877991E29BBD500B58A67 /* LaunchScreen.storyboard */,
 				8818779C1E29BBD500B58A67 /* Info.plist */,
+				881877A21E29BC9400B58A67 /* GoogleService-Info.plist */,
 			);
 			path = DevSocial;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 		88E9E2131E29BE2F004D08AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88E9E2151E2A92E0004D08AC /* FancyView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -105,6 +113,14 @@
 				881877921E29BBD500B58A67 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		88E9E2171E2A94CE004D08AC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				88E9E2181E2A94E5004D08AC /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		D6E8D55FC7214C0AD0DA4B51 /* Frameworks */ = {
@@ -152,6 +168,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8V5RJL266B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -242,6 +263,8 @@
 			files = (
 				881877931E29BBD500B58A67 /* SignInVC.swift in Sources */,
 				881877911E29BBD500B58A67 /* AppDelegate.swift in Sources */,
+				88E9E2161E2A92E0004D08AC /* FancyView.swift in Sources */,
+				88E9E2191E2A94E5004D08AC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +388,7 @@
 			baseConfigurationReference = 0F16FEA3D3930915BD2E1A37 /* Pods-DevSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DevSocial/DevSocial.entitlements;
 				DEVELOPMENT_TEAM = 8V5RJL266B;
 				INFOPLIST_FILE = DevSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -379,6 +403,7 @@
 			baseConfigurationReference = D044EBBE3C2DD53798C61D4F /* Pods-DevSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DevSocial/DevSocial.entitlements;
 				DEVELOPMENT_TEAM = 8V5RJL266B;
 				INFOPLIST_FILE = DevSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
