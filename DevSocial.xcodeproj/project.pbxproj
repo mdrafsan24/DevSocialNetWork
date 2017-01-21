@@ -8,18 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		78A8A25141DDA29A58BE6C7B /* Pods_DevSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D1DB5D29867F85423158C7 /* Pods_DevSocial.framework */; };
+		88159ACD1E332D7A001F3077 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88159ACC1E332D7A001F3077 /* CircleView.swift */; };
 		881877911E29BBD500B58A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881877901E29BBD500B58A67 /* AppDelegate.swift */; };
 		881877931E29BBD500B58A67 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881877921E29BBD500B58A67 /* SignInVC.swift */; };
 		881877961E29BBD500B58A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881877941E29BBD500B58A67 /* Main.storyboard */; };
 		881877981E29BBD500B58A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881877971E29BBD500B58A67 /* Assets.xcassets */; };
 		8818779B1E29BBD500B58A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881877991E29BBD500B58A67 /* LaunchScreen.storyboard */; };
 		881877A31E29BC9400B58A67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 881877A21E29BC9400B58A67 /* GoogleService-Info.plist */; };
+		88D9C89E1E2F04FA00C13985 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9C89D1E2F04FA00C13985 /* FeedVC.swift */; };
 		88E9E2161E2A92E0004D08AC /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9E2151E2A92E0004D08AC /* FancyView.swift */; };
 		88E9E2191E2A94E5004D08AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9E2181E2A94E5004D08AC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F16FEA3D3930915BD2E1A37 /* Pods-DevSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevSocial/Pods-DevSocial.debug.xcconfig"; sourceTree = "<group>"; };
+		88159ACC1E332D7A001F3077 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		8818778D1E29BBD500B58A67 /* DevSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881877901E29BBD500B58A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		881877921E29BBD500B58A67 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		8818779C1E29BBD500B58A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881877A21E29BC9400B58A67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88B4A9C51E2C9D0E000DA26F /* DevSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DevSocial.entitlements; sourceTree = "<group>"; };
+		88D9C89D1E2F04FA00C13985 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		88E9E2151E2A92E0004D08AC /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		88E9E2181E2A94E5004D08AC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D044EBBE3C2DD53798C61D4F /* Pods-DevSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevSocial/Pods-DevSocial.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				88E9E2151E2A92E0004D08AC /* FancyView.swift */,
+				88159ACC1E332D7A001F3077 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				881877921E29BBD500B58A67 /* SignInVC.swift */,
+				88D9C89D1E2F04FA00C13985 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -261,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88159ACD1E332D7A001F3077 /* CircleView.swift in Sources */,
 				881877931E29BBD500B58A67 /* SignInVC.swift in Sources */,
 				881877911E29BBD500B58A67 /* AppDelegate.swift in Sources */,
+				88D9C89E1E2F04FA00C13985 /* FeedVC.swift in Sources */,
 				88E9E2161E2A92E0004D08AC /* FancyView.swift in Sources */,
 				88E9E2191E2A94E5004D08AC /* Constants.swift in Sources */,
 			);
