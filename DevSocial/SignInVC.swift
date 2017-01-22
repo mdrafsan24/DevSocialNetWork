@@ -56,6 +56,7 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                 print("Succesfully logged in with FB")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseAuth(credential)
+                self.performSegue(withIdentifier: "goToFeed", sender: nil)
             }
         }
         

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		78A8A25141DDA29A58BE6C7B /* Pods_DevSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D1DB5D29867F85423158C7 /* Pods_DevSocial.framework */; };
 		88159ACD1E332D7A001F3077 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88159ACC1E332D7A001F3077 /* CircleView.swift */; };
+		88159ACF1E33D082001F3077 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88159ACE1E33D082001F3077 /* PostCell.swift */; };
 		881877911E29BBD500B58A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881877901E29BBD500B58A67 /* AppDelegate.swift */; };
 		881877931E29BBD500B58A67 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881877921E29BBD500B58A67 /* SignInVC.swift */; };
 		881877961E29BBD500B58A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881877941E29BBD500B58A67 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		0F16FEA3D3930915BD2E1A37 /* Pods-DevSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevSocial/Pods-DevSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		88159ACC1E332D7A001F3077 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		88159ACE1E33D082001F3077 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		8818778D1E29BBD500B58A67 /* DevSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881877901E29BBD500B58A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		881877921E29BBD500B58A67 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				88E9E2151E2A92E0004D08AC /* FancyView.swift */,
 				88159ACC1E332D7A001F3077 /* CircleView.swift */,
+				88159ACE1E33D082001F3077 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88159ACF1E33D082001F3077 /* PostCell.swift in Sources */,
 				88159ACD1E332D7A001F3077 /* CircleView.swift in Sources */,
 				881877931E29BBD500B58A67 /* SignInVC.swift in Sources */,
 				881877911E29BBD500B58A67 /* AppDelegate.swift in Sources */,
