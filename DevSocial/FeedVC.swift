@@ -15,10 +15,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        super.viewDidLoad()
+        
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            print(snapshot.value)
+        })
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,6 +35,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
     }
+        
     
     @IBAction func signOutTapped(_ sender: AnyObject) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
